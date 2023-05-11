@@ -27,10 +27,10 @@ def max_division_by_3(num):
         for b in range(len(num)):
             if br == 'break':
                 break
-            for d in range(9, -1, -1):
+            for n in range(9, -1, -1):
                 if br == 'break':
                     break
-                new_num = num[0:b] + str(d) + num[b + 1:]
+                new_num = num[0:b] + str(n) + num[b + 1:]
                 if int(new_num) > int(num) and int(new_num) % 3 == 0:
                     new_num = int(new_num)
                     br = 'break'
