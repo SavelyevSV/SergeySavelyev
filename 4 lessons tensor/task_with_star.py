@@ -24,7 +24,7 @@ def max_division_by_3(num):
         if num[b] == '9':
             e += 1
     if e == len(num):
-        print(num[:len(num) - 1] + '6')
+        print(num[:len(num) - 1])
     else:
         for b in range(len(num)):
             if br == 'break':
