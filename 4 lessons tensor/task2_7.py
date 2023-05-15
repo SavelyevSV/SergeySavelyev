@@ -4,15 +4,15 @@
 
 def move_zeros(lst):
     # Здесь нужно написать код
-    lst1 = []
+    new_lst = []
     for i in lst:
         if i != 0:
-            lst1.append(i)
-    numzero = len(lst) - len(lst1)
+            new_lst.append(i)
+    numzero = len(lst) - len(new_lst)
     while numzero > 0:
-        lst1.append(0)
+        new_lst.append(0)
         numzero -= 1
-    lst = lst1
+    lst = new_lst
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

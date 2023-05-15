@@ -46,3 +46,4 @@ for i, d in enumerate(data):
     assert josephus_task(*d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
     print(f'Тестовый набор {d} прошёл проверку')
 print('Всё ок')
+

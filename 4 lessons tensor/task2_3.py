@@ -10,12 +10,8 @@ def sum_digits(num):
     # Здесь нужно написать код
     our_sum = 0
     while num > 0:
-        if num > 10:
-            our_sum += num % 10
-            num = num // 10
-        else:
-            our_sum += num
-            num = 0
+        our_sum += num % 10
+        num = num // 10
     return our_sum
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

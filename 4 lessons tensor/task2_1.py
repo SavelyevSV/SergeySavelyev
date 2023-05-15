@@ -8,13 +8,17 @@ def which_triangle(a, b, c):
     # Здесь нужно написать код
     if a == b == c != 0:
         type_triangle = 'Равносторонний'
-    elif a == b != 0 or a == c != 0 or b == c != 0:
+        return type_triangle
+    elif (a == b != 0 or a == c != 0 or b == c != 0) and (a + b > c and a + c > b and b + c > a):
         type_triangle = 'Равнобедренный'
+        return type_triangle
     elif a != b and a != c and b != c and a + b > c and a + c > b and b + c > a:
         type_triangle = 'Обычный'
+        return type_triangle
     elif a + b <= c or a + c <= b or b + c <= a:
         type_triangle = 'Не треугольник'
-    return type_triangle
+        return type_triangle
+
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
@@ -24,11 +28,12 @@ data = [
     (1, 2, 2),
     (3, 4, 5),
     (3, 2, 3),
-    (1, 2, 3)
+    (1, 2, 3),
+    (1, 1, 6)
 ]
 
 test_data = [
-    "Равносторонний", "Равнобедренный", "Обычный", "Равнобедренный", "Не треугольник"
+    "Равносторонний", "Равнобедренный", "Обычный", "Равнобедренный", "Не треугольник", "Не треугольник"
 ]
 
 

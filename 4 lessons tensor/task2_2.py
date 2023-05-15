@@ -7,10 +7,10 @@
 
 def flatten_and_sort(array):
     # Здесь нужно написать код
-    arr = []
+    new_array = []
     for i in array:
-        arr = arr + i
-    result_list = sorted(arr)
+        new_array = new_array + i
+    result_list = sorted(new_array)
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
