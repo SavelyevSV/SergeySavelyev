@@ -15,13 +15,9 @@ def letter_stat(our_str):
     @return letters_dict:
     """
     # Здесь нужно написать код
-    our_str_list = list(our_str)
     letters_dict = {}
-    for char in our_str_list:
-        if char in letters_dict:
-            letters_dict[char] += 1
-        else:
-            letters_dict[char] = 1
+    for char in our_str:
+        letters_dict[char] = our_str.count(char)
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

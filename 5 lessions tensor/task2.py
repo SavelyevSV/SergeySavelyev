@@ -14,15 +14,14 @@ def repeats(our_str):
     @return new_str:
     """
     # Здесь нужно написать код
-    our_str_list = list(our_str)
     letters_dict = {}
     new_str = []
-    for char in our_str_list:
-        if char in letters_dict:
-            letters_dict[char] += 1
-        else:
-            letters_dict[char] = 1
+    count = 1
+    for char in our_str:
+        slice_str = our_str[:count]  # срез строки
+        letters_dict[char] = slice_str.count(char)  # подсчет символов в текущем срезе
         new_str.append(f'{char}_{letters_dict[char]}')
+        count += 1
     new_str = ''.join(new_str)
     return new_str
 
