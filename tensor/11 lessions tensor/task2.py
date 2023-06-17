@@ -38,7 +38,7 @@ driver.find_element(By.CSS_SELECTOR, 'div p.textEditor_Viewer__Paragraph').send_
 time.sleep(4)
 driver.find_element(By.CSS_SELECTOR, 'div.msg-dialogs-item__title.ws-flexbox.ws-justify-content-start.ws-flex-nowrap.ws-align-items-baseline').click()
 time.sleep(5)
-assert letter == str(driver.find_element(By.CSS_SELECTOR, 'div div.msg-entity-layout__message-content.ws-flexbox.ws-flex-column.msg-entity-templates-content.msg-entity-layout__message-content_padding-right_default.msg-entity-templates-content_rounded.msg-entity-templates-content_background_blue p').get_attribute('textContent')), 'письмо не ровно'
+assert letter == str(driver.find_element(By.CSS_SELECTOR, 'div div.msg-entity-layout__message-content.ws-flexbox.ws-flex-column.msg-entity-templates-content.msg-entity-layout__message-content_padding-right_default.msg-entity-templates-content_rounded.msg-entity-templates-content_background_blue p').get_attribute('textContent')), 'письмо не равно'
 time.sleep(3)
 driver.find_element(By.CSS_SELECTOR, 'span i.controls-Button__icon.controls-BaseButton__icon.controls-icon_size-m.controls-icon_style-danger.controls-icon.icon-Erase').click()
 time.sleep(4)

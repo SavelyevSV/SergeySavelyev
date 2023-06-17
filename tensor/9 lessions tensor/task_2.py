@@ -56,6 +56,7 @@ def func2():
 def func3():
     time.sleep(5)
 
+
 func1()
 func2(file_log='func2.txt')
 func1()
